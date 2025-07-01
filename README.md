@@ -1,2 +1,2 @@
-# aidanlihenderson.github.io
-Undergraduate EECE Project Portfolio
+# Aidan Li Henderson
+## Undergraduate Electrical & Computer Engineering Project Portfolio
