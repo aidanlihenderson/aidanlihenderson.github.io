@@ -120,20 +120,29 @@
                         <p class='subtitle'>I'm based in cheltenham in the UK, not far from Bristol, Birmingham, Oxford and Swindom. Drop me a line.
                         </p>
                         <!-- form -->
-                        <form class="form_edit"> 
+                        <form action="https://formsubmit.co/aidanlhenderson@gmail.com" method="POST" class="form_edit">
+                            <!-- Name Field -->
                             <div class="form-group">
-                                <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
                             </div>
-
+                        
+                            <!-- Email Field -->
                             <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
                             </div>
-
+                        
+                            <!-- Message Field -->
                             <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
                             </div>
+                        
+                            <!-- Anti-spam field (hidden from humans) -->
+                            <input type="text" name="_honey" style="display:none">
+                        
+                            <!-- Submit Button -->
                             <button type="submit" class="btn btn-rabbit submit">Send Message</button>
                         </form>
+
                     </div>
                 </div>
             </div>
