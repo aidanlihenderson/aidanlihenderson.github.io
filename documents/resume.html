@@ -1735,6 +1735,23 @@ ul
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
+<style>
+  /* Force the résumé itself to letter size on desktops/print */
+  @page { size: 8.5in 11in; margin: 0; }
+
+  body {
+    width: 8.5in;          /* ≈ 816 px at 96 dpi */
+    margin: 0 auto;        /* center in the tab */
+  }
+
+  /* Keep it fluid on small screens */
+  @media (max-width: 900px) {
+    body {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+</style>
 </head>
 
 <body lang=EN-US link="#467886" vlink="#96607D" style='tab-interval:.5in;
