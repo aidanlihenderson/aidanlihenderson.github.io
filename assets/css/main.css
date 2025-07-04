@@ -363,10 +363,10 @@ footer{
     max-width:100%;
     height:auto;
     display:block;   /* removes the tiny whitespace below inline images */
-}
 /* Contact-page photo */
 .contact-photo{
     max-width:100%;
     height:auto;
-    display:block;      /* removes the little inline-image gap */
+    display:block;   /* removes tiny inline-image gap */
 }
+
