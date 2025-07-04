@@ -8,16 +8,15 @@ body{
 }
 
 .home-description{
-	color: #F5F2EA;
 	font-style: italic;
 	font-weight: 600;
 	font-family: "Times New Roman";
 	font-size: 19px;
-    padding-top: 15px;
-    padding-bottom: 25px;
-    line-height: 29px;
-
-}
+    	padding-top: 15px;
+    	padding-bottom: 25px;
+    	line-height: 29px;
+	color: #F9F7F1;
+	}
 
 .social a i{
 	background-color: #F5F2EA;   /* creamy-white square */
@@ -108,7 +107,8 @@ p{
 
 .logo h4{
 	font-family: 'Times New Roman';
-	color: #c7c9c2;
+	font-size: 20px;
+	color: #F9F7F1;
 }
 
 
@@ -214,7 +214,7 @@ footer{
 	font-style: italic;
 	font-weight: 600;
 	font-size: 20px;
-	color: #3b3b3b;
+	color: #F9F7F1;
 	line-height: 28px;
 	font-family: "Times New Roman";
 	margin-top: 15px;
