@@ -372,3 +372,11 @@ footer{
     display:block;   /* removes tiny inline-image gap */
 }
 
+@media (min-width: 900px) {     /* keeps phones/tablets flexible */
+  .resume-frame {
+    width: 8.5in;        /* exact letter width on desktop/print */
+    height: 11in;        /* exact letter height                */
+    max-width: none;     /* remove the 850 px cap from earlier */
+  }
+}
+
