@@ -19,20 +19,21 @@ body{
 }
 
 .social a i{
+	background-color: #F5F2EA;   /* creamy-white square */
+	color: #111;                 /* dark charcoal glyph */
 	height: 40px;
 	width: 40px;
 	border: 1px solid #111;
 	line-height: 40px;
 	margin: 0 10px;
-	color: #111;
 	font-size: 20px;
 	padding-bottom: 20px;
 	}
 
 .social a:hover i{
-	color: #fff;
-	border-color: #bb9e7d;
-	background-color: #bb9e7d;
+	background-color: #bb9e7d;   /* gold-pink on hover */
+	color: #fff;                 /* white glyph */
+	border-color: #bb9e7d;       /* blend border with bg */
 	}
 
 
@@ -69,10 +70,10 @@ body{
 	width: 100%;
 }
 .btn-rabbit{
-	background-color: #fff;
+	background-color: #F5F2EA;
 	color: #111;
 	font-style: italic;
-	border: 1px solid #111;
+	border: 1px solid #F5F2EA;
 	border-radius: 0px !important;
 	transition: all 0.4s ease-in-out;
 	margin-bottom: 20px;
