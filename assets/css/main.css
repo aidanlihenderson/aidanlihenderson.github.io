@@ -161,6 +161,7 @@ footer{
 	
 }
 .form-control{
+	color: F5F2EA;
 	font-style: italic;
 	border-radius: 0;
 	font-family: "Times New Roman";
@@ -211,6 +212,7 @@ footer{
 }
 
 .subtitle{
+	color: #F5F2EA;
 	font-style: italic;
 	font-weight: 600;
 	font-size: 20px;
