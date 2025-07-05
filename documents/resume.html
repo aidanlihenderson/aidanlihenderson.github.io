@@ -1751,30 +1751,22 @@ ul
       padding: 0 1rem;
     }
   }
-  @page { size: 8.5in 11in; margin: 0; }
-  body  { width: 8.5in; margin: 0 auto; }
 
   /* Put the Computer-Skills bullets in two columns */
-/* two perfectly aligned columns ----------------------------- */
-.WordSection2{
-    display:flex;           /* lay items out in a row               */
-    flex-wrap:wrap;         /* wrap to the next “row” when needed   */
-    gap:0 2em;              /* row gap 0, column gap 2 em           */
+.WordSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2em;
+  align-items: flex-start;    /* make sure every item starts at the top */
 }
 
-/* each bullet paragraph = half the row ----------------------------- */
-.WordSection2 p{
-    flex:0 0 50%;           /* *exactly* half the line              */
-    margin:0 0 .4em 0;      /* kill Word’s ½-inch left margin       */
-    padding-left:.25in;     /* put the bullet indent back           */
-    text-indent:-.25in;     /* keeps the bullet hanging             */
-    box-sizing:border-box;  /* include the padding in the 50 % width*/
+/* each bullet paragraph = half the row with a hanging indent */
+.WordSection2 p {
+  flex: 0 0 50%;
+  margin: 0 0 .4em .5in;   /* 0 top, 0 right, .4em bottom, .5in left */
+  text-indent: -0.25in;    /* pull the first line back over the bullet */
+  box-sizing: border-box;
 }
-  /* Trim paragraph spacing so the bullets line up neatly */
-.WordSection2 p{
-    margin: 0 0 .4em 0;
-}
-</style>
 </head>
 
 <body lang=EN-US link="#467886" vlink="#96607D" style='tab-interval:.5in;
