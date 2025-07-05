@@ -71,7 +71,6 @@ body{
 .btn-rabbit{
 	background-color: #F5F2EA;
 	color: #111;
-	font-style: italic;
 	border: 1px solid #F5F2EA;
 	border-radius: 0px !important;
 	transition: all 0.4s ease-in-out;
@@ -121,7 +120,6 @@ footer{
     width: 170px;    
     font-family: "Times New Roman";
     font-size: 17px;
-    font-style: italic;
     vertical-align: middle;
     text-align: center;
     display: block;
