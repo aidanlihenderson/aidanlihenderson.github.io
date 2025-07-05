@@ -1736,25 +1736,25 @@ ul
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
 <style>
-  /* Two-column Computer Skills list */
+  /* … your letter-size rules … */
+
+  /* two-column Computer Skills list */
   .WordSection2 {
-    column-count: 2;       /* split into two columns */
-    column-gap: 2em;       /* gutter between them */
+    column-count: 2;
+    column-gap:   2em;
   }
-
-  /* restore the hanging-indent from Word’s text-indent */
   .WordSection2 p {
-    padding-left: 0.25in;  /* push text right of the bullet */
-    text-indent: -0.25in;   /* pull the first line back under the bullet */
-    margin: 0 0 0.4em 0;    /* tighten spacing between items */
-    break-inside: avoid;    /* never break an item across columns */
+    padding-left: 0.25in;
+    text-indent: -0.25in;
+    margin: 0 0 .4em 0;
+    break-inside: avoid;
   }
 
-  /* force a column break after the 6th bullet (JavaScript) */
-  .WordSection2 p:nth-of-type(6) {
-    break-after: column;             /* modern */
-    -webkit-column-break-after: always; /* webkit */
-    page-break-after: always;        /* print fallback */
+  /* BREAK *after* the 7th <p> (JavaScript) so MS Office begins at the top */
+  .WordSection2 p:nth-of-type(7) {
+    break-after: column;
+    -webkit-column-break-after: always;
+    page-break-after: always;
   }
 </style>
 </head>
