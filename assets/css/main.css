@@ -108,7 +108,7 @@ p{
 .logo h4{
 	font-family: 'Times New Roman';
 	font-size: 20px;
-	color: #F9F7F1;
+	color: #F5F2EA;
 }
 
 
@@ -171,6 +171,7 @@ footer{
 	
 	font-size: 32px;
 	font-family: "Times New Roman";
+	color: #F9F7F1;
 }
 
 .fa-heartbeat{
@@ -214,7 +215,7 @@ footer{
 	font-style: italic;
 	font-weight: 600;
 	font-size: 20px;
-	color: #F9F7F1;
+	color: #F5F2EA;
 	line-height: 28px;
 	font-family: "Times New Roman";
 	margin-top: 15px;
