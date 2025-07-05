@@ -1736,37 +1736,25 @@ ul
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
 <style>
-  /* Force the résumé itself to letter size on desktops/print */
-  @page { size: 8.5in 11in; margin: 0; }
+  /* Force letter-size on screen & paper */
+  @page      { size: 8.5in 11in; margin:0; }
+  body       { width:8.5in; margin:0 auto; }
+  @media(max-width:900px){ body{ width:100%; padding:0 1rem } }
 
-  body {
-    width: 8.5in;          /* ≈ 816 px at 96 dpi */
-    margin: 0 auto;        /* center in the tab */
+  /* Two-column skills list */
+  .WordSection2 {
+    display:        flex;
+    flex-wrap:      wrap;
+    gap:            0 2em;
+    align-items:    flex-start;
   }
-
-  /* Keep it fluid on small screens */
-  @media (max-width: 900px) {
-    body {
-      width: 100%;
-      padding: 0 1rem;
-    }
+  .WordSection2 p {
+    flex:           0 0 50%;      /* exactly half the container */
+    margin:         0 0 .4em 0;   /* kill Word’s .5in left-indent */
+    padding-left:   .25in;        /* indent text after the bullet */
+    text-indent:    -0.25in;       /* hang the bullet in that space */
+    box-sizing:     border-box;    
   }
-
-  /* Put the Computer-Skills bullets in two columns */
-.WordSection2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 2em;
-  align-items: flex-start;    /* make sure every item starts at the top */
-}
-
-/* each bullet paragraph = half the row with a hanging indent */
-.WordSection2 p {
-  flex: 0 0 50%;
-  margin: 0 0 .4em .5in;   /* 0 top, 0 right, .4em bottom, .5in left */
-  text-indent: -0.25in;    /* pull the first line back over the bullet */
-  box-sizing: border-box;
-}
 </style>
 </head>
 
