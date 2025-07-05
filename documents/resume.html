@@ -1736,24 +1736,25 @@ ul
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
 <style>
-  /* Force letter-size on screen & paper */
-  @page      { size: 8.5in 11in; margin:0; }
-  body       { width:8.5in; margin:0 auto; }
-  @media(max-width:900px){ body{ width:100%; padding:0 1rem } }
-
-  /* Two-column skills list */
+  /* Two-column Computer Skills list */
   .WordSection2 {
-    display:        flex;
-    flex-wrap:      wrap;
-    gap:            0 2em;
-    align-items:    flex-start;
+    column-count: 2;       /* split into two columns */
+    column-gap: 2em;       /* gutter between them */
   }
+
+  /* restore the hanging-indent from Word’s text-indent */
   .WordSection2 p {
-    flex:           0 0 50%;      /* exactly half the container */
-    margin:         0 0 .4em 0;   /* kill Word’s .5in left-indent */
-    padding-left:   .25in;        /* indent text after the bullet */
-    text-indent:    -0.25in;       /* hang the bullet in that space */
-    box-sizing:     border-box;    
+    padding-left: 0.25in;  /* push text right of the bullet */
+    text-indent: -0.25in;   /* pull the first line back under the bullet */
+    margin: 0 0 0.4em 0;    /* tighten spacing between items */
+    break-inside: avoid;    /* never break an item across columns */
+  }
+
+  /* force a column break after the 6th bullet (JavaScript) */
+  .WordSection2 p:nth-of-type(6) {
+    break-after: column;             /* modern */
+    -webkit-column-break-after: always; /* webkit */
+    page-break-after: always;        /* print fallback */
   }
 </style>
 </head>
