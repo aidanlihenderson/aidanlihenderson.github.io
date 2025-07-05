@@ -1738,20 +1738,19 @@ ul
 <style>
   /* … your letter-size rules … */
 
-  /* two-column Computer Skills list */
+  /* — START two-column Computer Skills layout — */
   .WordSection2 {
-    column-count: 2;
-    column-gap:   2em;
+    column-count: 2;      /* split into two columns */
+    column-gap:   2em;    /* gutter between them */
   }
   .WordSection2 p {
-    padding-left: 0.25in;
-    text-indent: -0.25in;
-    margin: 0 0 .4em 0;
-    break-inside: avoid;
+    padding-left:  0.25in;  /* indent text after the bullet */
+    text-indent:  -0.25in;  /* hang the bullet in the gutter */
+    margin:        0 0 0.4em 0;  /* tighten spacing */
+    break-inside: avoid;    /* don’t split a paragraph across columns */
   }
-
-  /* BREAK *after* the 7th <p> (JavaScript) so MS Office begins at the top */
-  .WordSection2 p:nth-of-type(7) {
+  /* Force the break *after* the 6th <p> (JavaScript) */
+  .WordSection2 p:nth-of-type(6) {
     break-after: column;
     -webkit-column-break-after: always;
     page-break-after: always;
@@ -1989,14 +1988,6 @@ mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
 dir=LTR></span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
 mso-fareast-font-family:Calibri'>JavaScript<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
-Calibri'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
-Calibri'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;mso-add-space:auto;
 text-indent:-.25in;line-height:normal;mso-list:l1 level1 lfo3'><![if !supportLists]><span
