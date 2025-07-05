@@ -1757,22 +1757,23 @@ ul
   /* Put the Computer-Skills bullets in two columns */
 /* two perfectly aligned columns ----------------------------- */
 .WordSection2{
-    display: flex;          /* create a flex row */
-    flex-wrap: wrap;        /* allow items to wrap */
-    column-gap: 2em;        /* gap between the columns */
+    display:flex;           /* lay items out in a row               */
+    flex-wrap:wrap;         /* wrap to the next “row” when needed   */
+    gap:0 2em;              /* row gap 0, column gap 2 em           */
 }
 
-/* each bullet paragraph = ½ the row ------------------------- */
+/* each bullet paragraph = half the row ----------------------------- */
 .WordSection2 p{
-    width: 50%;             /* one paragraph per half-row */
-    margin: 0 0 .4em 0;     /* tighten the vertical rhythm */
-    box-sizing: border-box; /* include bullet indent in width */
+    flex:0 0 50%;           /* *exactly* half the line              */
+    margin:0 0 .4em 0;      /* kill Word’s ½-inch left margin       */
+    padding-left:.25in;     /* put the bullet indent back           */
+    text-indent:-.25in;     /* keeps the bullet hanging             */
+    box-sizing:border-box;  /* include the padding in the 50 % width*/
 }
-
   /* Trim paragraph spacing so the bullets line up neatly */
 .WordSection2 p{
     margin: 0 0 .4em 0;
-  }
+}
 </style>
 </head>
 
